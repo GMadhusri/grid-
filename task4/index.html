@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      .parent {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+      }
+      .parent div {
+        background-color: white;
+        border: 2px solid red;
+        box-shadow: -10px 10px 5px rgb(247, 11, 11);
+        padding: 10px;
+        text-align: center;
+        line-height: 10px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div style="grid-column: 5/7" width="200">5</div>
+      <div style="grid-column: 1/3">6</div>
+      <div style="grid-column: 3/5">7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div style="grid-column: 3/5">12</div>
+      <div style="grid-column: 5/7">13</div>
+    </div>
+  </body>
+</html>
